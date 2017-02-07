@@ -1,0 +1,6 @@
+framework module Pods_movie_browser {
+  umbrella header "Pods-movie-browser-umbrella.h"
+
+  export *
+  module * { export * }
+}
