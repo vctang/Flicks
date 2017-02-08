@@ -41,6 +41,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Had difficulties implementing the collection view. Also attemptet (but failed) to implement the search bar.
+NOTE: Was unable to push my collection view version to github. Got an error. Version on github is the old tableView version.
 
 ## License
 
