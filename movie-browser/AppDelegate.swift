@@ -13,9 +13,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Navigation Bar Color
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)]
+        
+        // Status Bar Color
+        application.statusBarStyle = .lightContent
+        
+        // set up your background color view
+        let colorView = UIView()
+        colorView.backgroundColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
+        
+        // use UITableViewCell.appearance() to configure
+        // the default appearance of all UITableViewCells in your app
+        UITableViewCell.appearance().selectedBackgroundView = colorView
+        
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let nowPlayingNavigationController = storyboard.instantiateViewController(withIdentifier: "MoviesNavigationController") as! UINavigationController
+        let nowPlayingViewController = nowPlayingNavigationController.topViewController as! MoviesViewController
+        nowPlayingViewController.endpoint = "now_playing"
+        nowPlayingNavigationController.tabBarController?.tabBarItem.title = "Now Playing"
+        nowPlayingNavigationController.tabBarItem.image = UIImage(named: "now_playing")
+        nowPlayingNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+        
+        let topRatedNavigationController = storyboard.instantiateViewController(withIdentifier: "MoviesNavigationController") as! UINavigationController
+        let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
+        topRatedViewController.endpoint = "top_rated"
+        topRatedNavigationController.tabBarController?.tabBarItem.title = "Top Rated"
+        topRatedNavigationController.tabBarItem.image = UIImage(named: "top_rated")
+        topRatedNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+                
+        let tabBarController = UITabBarController()
+        UITabBar.appearance().barTintColor = UIColor.black
+        UITabBar.appearance().tintColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
+        tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController]
+        
+        
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
