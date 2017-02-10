@@ -40,7 +40,10 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Had difficulties implementing the collection view. Also attemptet (but failed) to implement the search bar.
+- Had difficulties implementing the collection view. 
+- Also attemptet (but failed) to implement the search bar.
+- movie-browser is the old tableView version
+- Flicks is the collectionView version
 
 ## License
 

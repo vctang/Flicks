@@ -14,7 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+<<<<<<< HEAD
+		<key>Pods-Flicks.xcscheme</key>
+=======
 		<key>Pods-movie-browser.xcscheme</key>
+>>>>>>> cd50cba1835b334cc349bda96c34f316e659b8dd
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +31,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+<<<<<<< HEAD
+		<key>C850ABE67243C87CB18B6D8AC1061CBA</key>
+=======
 		<key>527E98ED700EEA2B85A5A5CCD0A35A10</key>
+>>>>>>> cd50cba1835b334cc349bda96c34f316e659b8dd
 		<dict>
 			<key>primary</key>
 			<true/>
