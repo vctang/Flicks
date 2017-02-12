@@ -115,8 +115,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
-        cell.ratingLabel.text = String(rating)
         cell.overviewLabel.sizeToFit()
+        cell.ratingLabel.text = String(rating)
         
         cell.scrollView.contentSize = CGSize(width: cell.scrollView.frame.width, height: cell.scrollView.frame.origin.y + cell.scrollView.frame.size.height)
         

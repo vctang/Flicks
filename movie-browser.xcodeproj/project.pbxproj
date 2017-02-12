@@ -15,10 +15,12 @@
 		D0C36B751E41731700214965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C36B741E41731700214965 /* Assets.xcassets */; };
 		D0C36B781E41731700214965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C36B761E41731700214965 /* LaunchScreen.storyboard */; };
 		D0C36B801E41738300214965 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C36B7F1E41738300214965 /* MoviesViewController.swift */; };
+		FD716AE006FD6B684C9AFDD3 /* Pods_movie_browser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FC199B4197F634FF88ADA5 /* Pods_movie_browser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D6EB6DD1C96DF2E10535543 /* Pods-movie-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-browser/Pods-movie-browser.release.xcconfig"; sourceTree = "<group>"; };
+		B9FC199B4197F634FF88ADA5 /* Pods_movie_browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04BC1EC1E417F36005BAB5E /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D0BDB4CA1E4AD57D0036B44F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D0BDB4CE1E4B13C00036B44F /* Arista.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arista.ttf; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD716AE006FD6B684C9AFDD3 /* Pods_movie_browser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		4DC5E012E722CCB6E4D1564B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9FC199B4197F634FF88ADA5 /* Pods_movie_browser.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
