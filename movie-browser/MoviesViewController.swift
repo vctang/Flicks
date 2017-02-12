@@ -105,6 +105,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //let movie = filteredData![indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as? String
+        let rating = movie["vote_average"] as! Double
         
         let baseURL = "https://image.tmdb.org/t/p/w342"
         if let posterPath = movie["poster_path"] as? String {
@@ -114,6 +115,18 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
+        cell.ratingLabel.text = String(rating)
+        cell.overviewLabel.sizeToFit()
+        
+        cell.scrollView.contentSize = CGSize(width: cell.scrollView.frame.width, height: cell.scrollView.frame.origin.y + cell.scrollView.frame.size.height)
+        
+        if(rating < 5){
+            cell.rateColorView.backgroundColor = UIColor(red: 209/255, green: 50/255, blue: 23/255, alpha: 1)
+        } else if(rating >= 5 && rating < 7) {
+            cell.rateColorView.backgroundColor = UIColor(red: 209/255, green: 177/255, blue: 0/255, alpha: 1)
+        } else {
+            cell.rateColorView.backgroundColor = UIColor(red: 30/255, green: 168/255, blue: 55/255, alpha: 1)
+        }
         
         print("row \(indexPath.row)")
         return cell
@@ -129,7 +142,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     // This method updates filteredData based on the text in the Search Box
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredData = searchText.isEmpty ? movies: movies?.filter({(movies: NSDictionary) -> Bool in
-            return (movies["title"] as! String).range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+            //return (movies["title"] as! String).range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+            return (movies["title"] as! String).hasPrefix(searchText)
         })
         
         tableView.reloadData()

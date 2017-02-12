@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Status Bar Color
         application.statusBarStyle = .lightContent
         
+        //Search Bar Color
+        //UISearchBar.appearance().backgroundColor = UIColor.black
+        //UISearchBar.appearance().tintColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
+        
         // set up your background color view
         let colorView = UIView()
         colorView.backgroundColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
@@ -47,12 +51,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         topRatedNavigationController.tabBarController?.tabBarItem.title = "Top Rated"
         topRatedNavigationController.tabBarItem.image = UIImage(named: "top_rated")
         topRatedNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
-                
+        
+        // Tab Bar Controller Color
         let tabBarController = UITabBarController()
         UITabBar.appearance().barTintColor = UIColor.black
         UITabBar.appearance().tintColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
         tabBarController.viewControllers = [nowPlayingNavigationController, topRatedNavigationController]
-        
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
