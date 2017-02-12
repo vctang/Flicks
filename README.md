@@ -28,11 +28,11 @@ The following **optional** features are implemented:
 - [X] Customize the UI.
 
 The following **additional** features are implemented:
-- [X] Customized Navigation Bar
-- [X] Customized Status Bar
-- [X] Customized Search Bar
-- [X] Customized Tab Bar
-- [X] Customized selected cell color
+- [X] Customized Navigation Bar (Color, text color, title is same as tab bar)
+- [X] Customized Status Bar (To white)
+- [X] Customized Search Bar Color (Cancel, typed text)
+- [X] Customized Tab Bar (Image, selected color)
+- [X] Customized selected cell color (Highlighted as yellow)
 - [X] Customized launch screen (imported custom font)
 - [X] Implemented the cell deselect
 - [X] Added ratings to the movie descriptions
