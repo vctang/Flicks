@@ -42,6 +42,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Arista.ttf</string>
+		<string>FishChips.ttf</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

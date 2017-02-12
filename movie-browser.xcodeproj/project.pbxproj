@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D03741B41E510EF60078ACEF /* FishChips.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D03741B31E510EF60078ACEF /* FishChips.ttf */; };
 		D04BC1ED1E417F36005BAB5E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BC1EC1E417F36005BAB5E /* MovieCell.swift */; };
 		D0BDB4CB1E4AD57D0036B44F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BDB4CA1E4AD57D0036B44F /* DetailViewController.swift */; };
 		D0BDB4CF1E4B13C00036B44F /* Arista.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BDB4CE1E4B13C00036B44F /* Arista.ttf */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		0D6EB6DD1C96DF2E10535543 /* Pods-movie-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie-browser.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie-browser/Pods-movie-browser.release.xcconfig"; sourceTree = "<group>"; };
 		B9FC199B4197F634FF88ADA5 /* Pods_movie_browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie_browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03741B31E510EF60078ACEF /* FishChips.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FishChips.ttf; sourceTree = "<group>"; };
 		D04BC1EC1E417F36005BAB5E /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D0BDB4CA1E4AD57D0036B44F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D0BDB4CE1E4B13C00036B44F /* Arista.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arista.ttf; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				D0C36B741E41731700214965 /* Assets.xcassets */,
 				D0C36B761E41731700214965 /* LaunchScreen.storyboard */,
 				D0BDB4CE1E4B13C00036B44F /* Arista.ttf */,
+				D03741B31E510EF60078ACEF /* FishChips.ttf */,
 				D0C36B791E41731700214965 /* Info.plist */,
 			);
 			path = "movie-browser";
@@ -175,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03741B41E510EF60078ACEF /* FishChips.ttf in Resources */,
 				D0C36B781E41731700214965 /* LaunchScreen.storyboard in Resources */,
 				D0C36B751E41731700214965 /* Assets.xcassets in Resources */,
 				D0BDB4CF1E4B13C00036B44F /* Arista.ttf in Resources */,

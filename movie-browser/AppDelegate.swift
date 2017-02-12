@@ -23,8 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.statusBarStyle = .lightContent
         
         //Search Bar Color
-        //UISearchBar.appearance().backgroundColor = UIColor.black
-        //UISearchBar.appearance().tintColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
+        UISearchBar.appearance().backgroundColor = UIColor.black
+        UISearchBar.appearance().tintColor = UIColor(red: 243/255, green: 203/255, blue: 73/255, alpha: 1)
+        //UISearchBar.appearance().tintColor = UIColor.black
         
         // set up your background color view
         let colorView = UIView()
@@ -43,14 +44,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nowPlayingViewController.endpoint = "now_playing"
         nowPlayingNavigationController.tabBarController?.tabBarItem.title = "Now Playing"
         nowPlayingNavigationController.tabBarItem.image = UIImage(named: "now_playing")
-        nowPlayingNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+        nowPlayingNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        nowPlayingNavigationController.tabBarItem.title = "Now Playing"
+        nowPlayingNavigationController.navigationBar.topItem?.title = "Now Playing"
         
         let topRatedNavigationController = storyboard.instantiateViewController(withIdentifier: "MoviesNavigationController") as! UINavigationController
         let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
         topRatedViewController.endpoint = "top_rated"
         topRatedNavigationController.tabBarController?.tabBarItem.title = "Top Rated"
         topRatedNavigationController.tabBarItem.image = UIImage(named: "top_rated")
-        topRatedNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+        topRatedNavigationController.tabBarItem.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+        topRatedNavigationController.tabBarItem.title = "Top Rated"
+        topRatedNavigationController.navigationBar.topItem?.title = "Top Rated"
+        
+        /*if let font = UIFont(name: "FISH&CHIPS", size: 30) {
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: font]
+        }*/
         
         // Tab Bar Controller Color
         let tabBarController = UITabBarController()
