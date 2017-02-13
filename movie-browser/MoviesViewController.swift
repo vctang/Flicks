@@ -15,7 +15,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     var movies: [NSDictionary]?
     var filteredData: [NSDictionary]?
     var endpoint: String!
-    
+
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var netErrView: UIView!
@@ -143,7 +143,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredData = searchText.isEmpty ? movies: movies?.filter({(movies: NSDictionary) -> Bool in
             //return (movies["title"] as! String).range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
-            return (movies["title"] as! String).hasPrefix(searchText)
+            return (movies["title"] as! String).lowercased().hasPrefix(searchText.lowercased())
         })
         
         tableView.reloadData()
@@ -165,7 +165,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell);
-        let movie = movies![(indexPath?.row)!]
+        let movie = filteredData![(indexPath?.row)!]
         
         let detailViewController = segue.destination as! DetailViewController
         detailViewController.movie = movie
