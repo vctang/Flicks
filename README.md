@@ -4,7 +4,9 @@
 
 Time spent: 
 Week 1: ~7 hours
+
 Week 2: ~15 hours
+
 **23** hours spent in total
 
 ## User Stories
@@ -73,6 +75,7 @@ Week 1:
 Week 2:
 - Had difficulties changing the color of the entire cell as it is selected
 - Was unable to use imported font in launch screen (cannot be loaded at launch). Substituted with an image instead
+- Attempted (and failed) to implement infinite scrolling
 
 ## License
 
