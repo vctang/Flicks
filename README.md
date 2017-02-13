@@ -58,7 +58,7 @@ Week1:
 
 Week 2:
 
-<img src='http://i.imgur.com/x28QsLW.gif' title='Video Walkthrough Week 2' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/greS7mZ.gif' title='Video Walkthrough Week 2' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
