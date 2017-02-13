@@ -52,7 +52,13 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
+Week1:
+
 <img src='http://i.imgur.com/I2ol9T7.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Week 2:
+
+<img src='http://i.imgur.com/x28QsLW.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
