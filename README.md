@@ -2,7 +2,10 @@
 
 **Flicks** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **5** hours spent in total
+Time spent: 
+Week 1: ~7 hours
+Week 2: ~15 hours
+**23** hours spent in total
 
 ## User Stories
 
@@ -12,18 +15,33 @@ The following **required** functionality is complete:
 - [X] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [X] User sees a loading state while waiting for the movies API.
 - [X] User can pull to refresh the movie list.
+- [X] User can view movie details by tapping on a cell.
+- [X] User can select from a tab bar for either Now Playing or Top Rated movies.
+- [X] Customize the selection effect of the cell.
 
 The following **optional** features are implemented:
 
 - [X] User sees an error message when there's a networking error.
 - [X] Movies are displayed using a CollectionView instead of a TableView.
-- [ ] User can search for a movie.
+- [X] User can search for a movie.
 - [ ] All images fade in as they are loading.
 - [X] Customize the UI.
 
 The following **additional** features are implemented:
-
-- None
+- [X] Customized Navigation Bar (Color, text color, title is same as tab bar)
+- [X] Customized Status Bar (To white)
+- [X] Customized Search Bar Color (Cancel, typed text)
+- [X] Customized Tab Bar (Image, selected color)
+- [X] Customized selected cell color (Highlighted as yellow)
+- [X] Customized launch screen (imported custom font)
+- [X] Implemented the cell deselect
+- [X] Added ratings to the movie descriptions
+- [X] Color coded ratings
+- [X] Added scroll view to the movie cell description
+- [X] Edited scroll view in DetailsViewController so background photo is not moved
+- [X] Added year of movie release to the movie title in DetailsViewController
+- [X] Search bar filters by movie titles beginning with the search input (not simply contains)
+- [X] Cell descriptions are also fitToSize()
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -34,16 +52,27 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/I2ol9T7.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Week1:
+
+<img src='http://i.imgur.com/I2ol9T7.gif' title='Video Walkthrough Week 1' width='' alt='Video Walkthrough' />
+
+Week 2:
+
+<img src='http://i.imgur.com/n0J5kwT.gif' title='Video Walkthrough Week 2' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
+Week 1:
 - Had difficulties implementing the collection view. 
-- Also attemptet (but failed) to implement the search bar.
+- Also attempted (but failed) to implement the search bar.
 - movie-browser is the old tableView version
 - Flicks is the collectionView version
+
+Week 2:
+- Had difficulties changing the color of the entire cell as it is selected
+- Was unable to use imported font in launch screen (cannot be loaded at launch). Substituted with an image instead
 
 ## License
 
